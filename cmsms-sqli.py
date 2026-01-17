@@ -77,6 +77,6 @@ print_colored(f"[+] MD5 Hash: {md5_hash}", 'green')
 
 print_colored("\n[+] SUMMARY:", 'cyan')
 print_colored(f"    Username: {username}", 'yellow')
-print_colored(f"    MD5: {md5_hash} (crack: hashcat -m 0 '{md5_hash}' '{salt}' rockyou.txt)", 'yellow')
+print_colored(f"    MD5: {md5_hash} (crack: hashcat -a 0 -m 20 '{md5_hash}:{salt}' rockyou.txt)", 'yellow')
 print_colored(f"    HTTP Auth /writeup/admin/: {username}:{md5_hash[:8]} (crack first!)", 'red')
 print_colored("\n[+] Next: Crack MD5(salt+pass) -> Login admin -> Upload shell", 'green')
